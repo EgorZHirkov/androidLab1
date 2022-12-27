@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LAB_1</string>
+    <string name="todo">TODO</string>
+
+    <string name="About">О приложении</string>
+    <string name="HintEntryField">Введите число</string>
+    <string name="AppDescription">С помощью данного приложения вы можете сгенерировать последовательность целых неотрицательных чисел и нормализовать ее методом минимаксной нормализации.</string>
+</resources>

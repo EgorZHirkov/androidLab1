@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/AppHeader"
+        style="@style/AppHeader">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <ImageButton
+            android:id="@+id/ImageButtonClearAll"
+            style="@style/ImageButtonClearAll" />
+
+        <EditText
+            android:id="@+id/InputFieldIntervalBoundaries1"
+            style="@style/NumInputField" />
+
+        <ImageButton
+            android:id="@+id/ImageButtonClear1"
+            style="@style/ImageButtonClear" />
+
+        <EditText
+            android:id="@+id/InputFieldIntervalBoundaries2"
+            style="@style/NumInputField" />
+
+        <ImageButton
+            android:id="@+id/ImageButtonClear2"
+            style="@style/ImageButtonClear" />
+
+        <EditText
+            android:id="@+id/InputFieldNumberElements"
+            style="@style/NumInputField" />
+
+        <ImageButton
+            android:id="@+id/ImageButtonClear3"
+            style="@style/ImageButtonClear" />
+
+        <ImageButton
+            android:id="@+id/ImageButtonConfirm"
+            style="@style/ImageButtonConfirm" />
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListGeneratedData"
+            tools:listitem="@layout/recyclerview_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/ListGeneratedData" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

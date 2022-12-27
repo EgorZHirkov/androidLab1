@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/window_round">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+
+        android:fontFamily="@font/ubuntu_light"
+        android:justificationMode="inter_word"
+        android:padding="6dp"
+        android:text="@string/AppDescription"
+        android:textSize="18sp" />
+    <ImageButton
+        android:id="@+id/ImageButtonOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_pressed"
+        android:src="@drawable/icon_do" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="ImageButtonConfirm">
+        <item name="android:background">@drawable/button_pressed</item>
+        <item name="android:layout_columnSpan">3</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:src">@drawable/icon_do</item>
+    </style>
+
+    <style name="ImageButtonClear">
+        <item name="android:background">@drawable/button_pressed</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:src">@drawable/icon_clear</item>
+    </style>
+
+    <style name="ImageButtonClearAll">
+        <item name="android:background">@drawable/button_pressed</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_rowSpan">3</item>
+        <item name="android:src">@drawable/icon_refresh</item>
+    </style>
+
+    <style name="NumInputField">
+        <item name="android:background">@drawable/round</item>
+        <item name="android:fontFamily">@font/ubuntu_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/HintEntryField</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ListGeneratedData">
+        <item name="android:background">@color/colorGold</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+</resources>
